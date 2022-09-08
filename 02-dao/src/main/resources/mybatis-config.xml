@@ -18,18 +18,7 @@
     </environments>
 
     <mappers>
-        <mapper resource="cn/edu/gxu/mapper/StudentMapper.xml"/>
+        <mapper resource="cn/edu/gxu/dao/StudentDao.xml"/>
     </mappers>
-
-
-
-
-
-
-
-
-
-
-
 
 </configuration>

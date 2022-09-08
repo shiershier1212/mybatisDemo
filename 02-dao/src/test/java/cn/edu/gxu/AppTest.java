@@ -1,6 +1,7 @@
 package cn.edu.gxu;
 
 import cn.edu.gxu.po.Student;
+import cn.edu.gxu.utils.MyBatisUtil;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -15,22 +16,12 @@ public class AppTest
     // 查找测试
     @Test
     public void findStudentByIdTest(){
-        String config = "mybatis-config.xml";
-        InputStream inputStream = null;
-        try {
-            inputStream = Resources.getResourceAsStream(config);
-        }catch (IOException e){
-            e.printStackTrace();
-        }
-        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
-        SqlSession sqlSession = sqlSessionFactory.openSession();
 
-//        String sqlId = "cn.edu.gxu.mapper" + "." + "findStudentById";
+        SqlSession sqlSession = MyBatisUtil.getSqlSession();
 
-        String sqlId2 = "cn.edu.gxu.mapper" + "." + "findStudentByName";
-//        Student student = sqlSession.selectOne(sqlId, 1002);
+        String sqlId = "cn.edu.gxu.dao" + "." + "queryStudentById";
 
-        Student student = sqlSession.selectOne(sqlId2,"张三");
+        Student student = sqlSession.selectOne(sqlId, 1002);
 
         sqlSession.commit();
 
@@ -42,24 +33,17 @@ public class AppTest
     // 添加测试
     @Test
     public void addStudentTest(){
-        String config = "mybatis-config.xml";
-        InputStream inputStream = null;
-        try {
-            inputStream = Resources.getResourceAsStream(config);
-        }catch (IOException e){
-            e.printStackTrace();
-        }
-        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
-        SqlSession sqlSession = sqlSessionFactory.openSession();
 
-        String sql = "cn.edu.gxu.mapper" + "." + "addStudent";
+        SqlSession sqlSession = MyBatisUtil.getSqlSession();
+
+        String sql = "cn.edu.gxu.dao" + "." + "addStudent";
 
         Student student = new Student();
 
-        student.setId(1005);
-        student.setName("zhangqi");
-        student.setEmail("afeafa@qq.com");
-        student.setAge(45);
+        student.setId(1006);
+        student.setName("zhawerngqi");
+        student.setEmail("afeawerfa@qq.com");
+        student.setAge(495);
 
         int result = sqlSession.insert(sql, student);
 
@@ -71,21 +55,14 @@ public class AppTest
     // 修改测试
     @Test
     public void updateStudentTest(){
-    String config = "mybatis-config.xml";
-    InputStream inputStream = null;
-    try {
-         inputStream = Resources.getResourceAsStream(config);
-    }catch (IOException e){
-        e.printStackTrace();
-    }
-    SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
-    SqlSession sqlSession = sqlSessionFactory.openSession();
 
-    String sql = "cn.edu.gxu.mapper" + "." + "updateStudentById";
+    SqlSession sqlSession = MyBatisUtil.getSqlSession();
+
+    String sql = "cn.edu.gxu.dao" + "." + "updateStudentById";
 
     Student student = new Student();
 
-    student.setId(1005);
+    student.setId(1006);
     student.setName("zhangqi");
     student.setEmail("afe14563afa@qq.com");
     student.setAge(45);
@@ -100,17 +77,10 @@ public class AppTest
     // 删除测试
     @Test
     public void deleteStudentByIdTest(){
-        String config = "mybatis-config.xml";
-        InputStream inputStream = null;
-        try {
-            inputStream = Resources.getResourceAsStream(config);
-        }catch (IOException e){
-            e.printStackTrace();
-        }
-        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
-        SqlSession sqlSession = sqlSessionFactory.openSession();
 
-        String sql = "cn.edu.gxu.mapper" + "." + "deleteStudentById";
+        SqlSession sqlSession = MyBatisUtil.getSqlSession();
+
+        String sql = "cn.edu.gxu.dao" + "." + "deleteStudentById";
 
         int result = sqlSession.delete(sql,1005);
 
