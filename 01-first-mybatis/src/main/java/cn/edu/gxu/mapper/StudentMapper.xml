@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.gxu.mapper">
+
+    <select id="findStudentById" parameterType="java.util.Map" resultType="cn.edu.gxu.po.Student">
+        select * from student where id=#{id}
+    </select>
+
+    <insert id="addStudent" useGeneratedKeys="true" keyProperty="id">
+        insert into student values (#{id},#{name},#{email},#{age})
+    </insert>
+
+    <update id="updateStudentById">
+        update student set name=#{name},email=#{email},age=#{age} where id=#{id}
+    </update>
+
+    <delete id="deleteStudentById">
+        delete from student where id=#{id}
+    </delete>
+
+</mapper>
