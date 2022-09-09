@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface StudentDao {
 
-//    Student queryStudentById(Integer id);
+    Student queryStudentById(Integer id);
 
     List<Student> queryAllStudent();
 

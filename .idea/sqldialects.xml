@@ -4,5 +4,6 @@
     <file url="file://$PROJECT_DIR$/01-first-mybatis/src/main/java/cn/edu/gxu/mapper/StudentMapper.xml" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/01-first-mybatis/src/main/java/cn/edu/gxu/mapper/TeacherMapper.xml" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/02-dao/src/main/java/cn/edu/gxu/dao/StudentDao.xml" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/03-dao-2/src/main/java/cn/edu/gxu/dao/StudentDao.xml" dialect="GenericSQL" />
   </component>
 </project>
