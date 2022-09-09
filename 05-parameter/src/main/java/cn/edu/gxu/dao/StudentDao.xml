@@ -3,8 +3,12 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.edu.gxu.dao.StudentDao">
 
-    <select id="queryStudentById" parameterType="java.util.Map" resultType="cn.edu.gxu.po.Student">
+    <select id="queryStudentById" parameterType="java.lang.Integer" resultType="cn.edu.gxu.po.Student">
         select * from student where id=#{id}
+    </select>
+
+    <select id="queryStudentByNameOrAge" resultType="cn.edu.gxu.po.Student">
+        select * from student where name = #{myname} or age = #{myage}
     </select>
 
     <select id="queryAllStudent" resultType="cn.edu.gxu.po.Student">

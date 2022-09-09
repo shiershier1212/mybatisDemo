@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/02-dao/02-dao.iml" filepath="$PROJECT_DIR$/02-dao/02-dao.iml" />
       <module fileurl="file://$PROJECT_DIR$/03-dao-2/03-dao-2.iml" filepath="$PROJECT_DIR$/03-dao-2/03-dao-2.iml" />
       <module fileurl="file://$PROJECT_DIR$/04-dao-proxy/04-dao-proxy.iml" filepath="$PROJECT_DIR$/04-dao-proxy/04-dao-proxy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05-parameter/05-parameter.iml" filepath="$PROJECT_DIR$/05-parameter/05-parameter.iml" />
       <module fileurl="file://$PROJECT_DIR$/SSM.iml" filepath="$PROJECT_DIR$/SSM.iml" />
     </modules>
   </component>

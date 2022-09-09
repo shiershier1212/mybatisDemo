@@ -7,6 +7,7 @@
         <option value="$PROJECT_DIR$/02-dao/pom.xml" />
         <option value="$PROJECT_DIR$/03-dao-2/pom.xml" />
         <option value="$PROJECT_DIR$/04-dao-proxy/pom.xml" />
+        <option value="$PROJECT_DIR$/05-parameter/pom.xml" />
       </list>
     </option>
   </component>

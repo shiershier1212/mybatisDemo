@@ -25,6 +25,14 @@ public class AppTest
         }
     }
 
+//    查询多参数
+    @Test
+    public void queryStudentByNameOrAgeTest(){
+        StudentDaoImpl studentDao = new StudentDaoImpl();
+        System.out.println(studentDao.queryStudentByNameOrAge("王五",24));
+    }
+
+
     // 添加测试
     @Test
     public void addStudentTest(){
@@ -68,5 +76,7 @@ public class AppTest
         StudentDaoImpl studentDao = new StudentDaoImpl();
         System.out.println(studentDao.deleteStudentById(1021));
     }
+
+
 
 }

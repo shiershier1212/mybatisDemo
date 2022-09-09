@@ -10,6 +10,7 @@
         <module name="03-dao-2" />
         <module name="01-first-mybatis" />
         <module name="04-dao-proxy" />
+        <module name="05-parameter" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -18,6 +19,7 @@
       <module name="02-dao (1)" target="1.7" />
       <module name="03-dao-2" target="1.7" />
       <module name="04-dao-proxy" target="1.7" />
+      <module name="05-parameter" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

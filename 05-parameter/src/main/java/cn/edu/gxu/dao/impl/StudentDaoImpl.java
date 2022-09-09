@@ -25,6 +25,15 @@ public class StudentDaoImpl implements StudentDao {
     }
 
     @Override
+    public List<Student> queryStudentByNameOrAge(String name, Integer age) {
+        SqlSession sqlSession = MyBatisUtil.getSqlSession();
+        StudentDao studentDao = sqlSession.getMapper(StudentDao.class);
+        List<Student> list = studentDao.queryStudentByNameOrAge(name,age);
+        sqlSession.close();
+        return list;
+    }
+
+    @Override
     public List<Student> queryAllStudent() {
 //        SqlSession sqlSession = MyBatisUtil.getSqlSession();
 //        String sqlId = "cn.edu.gxu.dao" + "." + "queryAllStudent";
@@ -51,10 +60,7 @@ public class StudentDaoImpl implements StudentDao {
 
         SqlSession sqlSession = MyBatisUtil.getSqlSession();
         StudentDao studentDao = sqlSession.getMapper(StudentDao.class);
-        Integer re = studentDao.addStudent(student);
-        sqlSession.commit();
-        sqlSession.close();
-        return re;
+        return studentDao.addStudent(student);
     }
 
     @Override
@@ -68,10 +74,7 @@ public class StudentDaoImpl implements StudentDao {
 
         SqlSession sqlSession = MyBatisUtil.getSqlSession();
         StudentDao studentDao = sqlSession.getMapper(StudentDao.class);
-        Integer re = studentDao.updateStudentById(student);
-        sqlSession.commit();
-        sqlSession.close();
-        return re;
+        return studentDao.updateStudentById(student);
     }
 
     @Override
@@ -84,9 +87,6 @@ public class StudentDaoImpl implements StudentDao {
 //        return result;
         SqlSession sqlSession = MyBatisUtil.getSqlSession();
         StudentDao studentDao = sqlSession.getMapper(StudentDao.class);
-        Integer result = studentDao.deleteStudentById(id);
-        sqlSession.commit();
-        sqlSession.close();
-        return result;
+        return studentDao.deleteStudentById(id);
     }
 }
