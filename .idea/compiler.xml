@@ -7,8 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="02-dao" />
-        <module name="01-first-mybatis" />
         <module name="03-dao-2" />
+        <module name="01-first-mybatis" />
+        <module name="04-dao-proxy" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -16,6 +17,7 @@
       <module name="02-dao" target="1.7" />
       <module name="02-dao (1)" target="1.7" />
       <module name="03-dao-2" target="1.7" />
+      <module name="04-dao-proxy" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>
