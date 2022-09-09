@@ -7,5 +7,9 @@
     <file url="file://$PROJECT_DIR$/03-dao-2/src/main/java/cn/edu/gxu/dao/StudentDao.xml" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/04-dao-proxy/src/main/java/cn/edu/gxu/dao/StudentDao.xml" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/05-parameter/src/main/java/cn/edu/gxu/dao/StudentDao.xml" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/06-result-resultmap/src/main/java/cn/edu/gxu/dao/StudentDao.xml" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/06-result-resultmap/src/main/java/cn/edu/gxu/dao/TeacherDao.xml" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/06-result-resulttype/src/main/java/cn/edu/gxu/dao/StudentDao.xml" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/06-result-resulttype/src/main/java/cn/edu/gxu/dao/TeacherDao.xml" dialect="GenericSQL" />
   </component>
 </project>

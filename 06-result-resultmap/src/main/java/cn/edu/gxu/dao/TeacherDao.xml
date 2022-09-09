@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.gxu.dao.TeacherDao">
+<!--    用来解决实体类中的列名与数据库中的列名不对应的问题-->
+    <resultMap id="myMap" type="cn.edu.gxu.po.Teacher">
+        <id column="tid" property="id"/>
+        <result column="tname" property="name"/>
+    </resultMap>
+
+
+    <select id="queryAllTeacher" resultMap="myMap">
+        select * from teacher
+    </select>
+
+    <select id="queryTeacherById" resultMap="myMap">
+        select * from teacher where tid=#{id}
+    </select>
+
+
+
+
+</mapper>

@@ -6,7 +6,7 @@ import java.util.List;
 
 import org.junit.Test;
 
-public class AppTest 
+public class StudentTest
 {
     // 查找测试
     @Test
@@ -74,6 +74,14 @@ public class AppTest
         StudentDaoImpl studentDao = new StudentDaoImpl();
         System.out.println(studentDao.deleteStudentById(1021));
     }
+
+//    -------------------------------------------------------------
+
+
+
+
+
+
 
 
 
