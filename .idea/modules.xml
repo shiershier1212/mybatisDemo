@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/06-result-resulttype/06-result-resulttype.iml" filepath="$PROJECT_DIR$/06-result-resulttype/06-result-resulttype.iml" />
       <module fileurl="file://$PROJECT_DIR$/07-result-resultmap/07-result-resultmap.iml" filepath="$PROJECT_DIR$/07-result-resultmap/07-result-resultmap.iml" />
       <module fileurl="file://$PROJECT_DIR$/08-dynamic-sql/08-dynamic-sql.iml" filepath="$PROJECT_DIR$/08-dynamic-sql/08-dynamic-sql.iml" />
+      <module fileurl="file://$PROJECT_DIR$/09-mybatis-relation-many-for-one/09-mybatis-relation-many-for-one.iml" filepath="$PROJECT_DIR$/09-mybatis-relation-many-for-one/09-mybatis-relation-many-for-one.iml" />
       <module fileurl="file://$PROJECT_DIR$/SSM.iml" filepath="$PROJECT_DIR$/SSM.iml" />
     </modules>
   </component>

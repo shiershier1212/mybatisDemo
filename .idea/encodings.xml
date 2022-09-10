@@ -14,6 +14,8 @@
     <file url="file://$PROJECT_DIR$/06-result-resulttype/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/07-result-resultmap/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/08-dynamic-sql/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/09-mybatis-relation-many-for-one/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/09-mybatis-relation-many-for-one/src/main/resources" charset="UTF-8" />
     <file url="PROJECT" charset="GBK" />
   </component>
 </project>
