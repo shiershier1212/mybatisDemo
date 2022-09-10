@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/07-result-resultmap/07-result-resultmap.iml" filepath="$PROJECT_DIR$/07-result-resultmap/07-result-resultmap.iml" />
       <module fileurl="file://$PROJECT_DIR$/08-dynamic-sql/08-dynamic-sql.iml" filepath="$PROJECT_DIR$/08-dynamic-sql/08-dynamic-sql.iml" />
       <module fileurl="file://$PROJECT_DIR$/09-mybatis-relation-many-for-one/09-mybatis-relation-many-for-one.iml" filepath="$PROJECT_DIR$/09-mybatis-relation-many-for-one/09-mybatis-relation-many-for-one.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10-mybatis-relation-onefor-many/10-mybatis-relation-onefor-many.iml" filepath="$PROJECT_DIR$/10-mybatis-relation-onefor-many/10-mybatis-relation-onefor-many.iml" />
       <module fileurl="file://$PROJECT_DIR$/SSM.iml" filepath="$PROJECT_DIR$/SSM.iml" />
     </modules>
   </component>

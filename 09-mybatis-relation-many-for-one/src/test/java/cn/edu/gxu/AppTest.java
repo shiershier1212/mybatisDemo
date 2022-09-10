@@ -1,7 +1,7 @@
 package cn.edu.gxu;
 
-import static org.junit.Assert.assertTrue;
-
+import cn.edu.gxu.dao.impl.EmpDaoImpl;
+import cn.edu.gxu.model.Emp;
 import org.junit.Test;
 
 
@@ -9,8 +9,14 @@ public class AppTest
 {
 
     @Test
-    public void shouldAnswerWithTrue()
+    public void queryAllEmpTest()
     {
-        assertTrue( true );
+        EmpDaoImpl empDao = new EmpDaoImpl();
+        for (Emp e:empDao.queryAllEmp())
+        {
+            System.out.println(e);
+        }
     }
+
+
 }

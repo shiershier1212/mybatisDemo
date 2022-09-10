@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="10-mybatis-relation-onefor-many" />
         <module name="03-dao-2" />
         <module name="07-result-resultmap" />
         <module name="08-dynamic-sql" />
@@ -30,6 +31,7 @@
       <module name="07-result-resultmap" target="1.7" />
       <module name="08-dynamic-sql" target="1.7" />
       <module name="09-mybatis-relation-many-for-one" target="1.7" />
+      <module name="10-mybatis-relation-onefor-many" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

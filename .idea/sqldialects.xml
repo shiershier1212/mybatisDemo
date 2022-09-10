@@ -13,5 +13,8 @@
     <file url="file://$PROJECT_DIR$/07-result-resultmap/src/main/java/cn/edu/gxu/dao/TeacherDao.xml" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/08-dynamic-sql/src/main/java/cn/edu/gxu/dao/StudentDao.xml" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/08-dynamic-sql/src/main/java/cn/edu/gxu/dao/TeacherDao.xml" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/09-mybatis-relation-many-for-one/src/main/java/cn/edu/gxu/dao/EmpDao.xml" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/10-mybatis-relation-onefor-many/src/main/java/cn/edu/gxu/dao/DeptDao.xml" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/10-mybatis-relation-onefor-many/src/main/java/cn/edu/gxu/dao/EmpDao.xml" dialect="GenericSQL" />
   </component>
 </project>

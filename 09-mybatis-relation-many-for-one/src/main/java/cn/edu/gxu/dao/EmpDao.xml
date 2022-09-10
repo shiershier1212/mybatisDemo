@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.gxu.dao.EmpDao">
+
+<!--    <select id="queryAllEmp" resultType="cn.edu.gxu.model.Emp">-->
+<!--        SELECT e.empid,e.ename,e.esex,e.ehiredate,e.esal,d.dname-->
+<!--        FROM emp as e-->
+<!--                 INNER JOIN dept as d-->
+<!--                            on e.deptid = d.deptid-->
+<!--    </select>-->
+
+    <resultMap id="myMap" type="cn.edu.gxu.model.Emp">
+        <id property="empid" column="empid"/>
+        <result property="ename" column="ename"/>
+        <result property="esex" column="esex"/>
+        <result property="ehiredate" column="ehiredate"/>
+        <result property="esal" column="esal"/>
+    </resultMap>
+
+    <select id="queryAllEmp" resultMap="myMap">
+        select * from emp inner join dept using (deptid)
+    </select>
+
+</mapper>

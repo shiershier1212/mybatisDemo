@@ -5,10 +5,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>cn.edu.gxu</groupId>
-  <artifactId>09-mybatis-relation-many-for-one</artifactId>
+  <artifactId>10-mybatis-relation-onefor-many</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>09-mybatis-relation-many-for-one</name>
+  <name>10-mybatis-relation-onefor-many</name>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
