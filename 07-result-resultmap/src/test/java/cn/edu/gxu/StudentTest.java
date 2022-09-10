@@ -74,15 +74,4 @@ public class StudentTest
         StudentDaoImpl studentDao = new StudentDaoImpl();
         System.out.println(studentDao.deleteStudentById(1021));
     }
-
-//    -------------------------------------------------------------
-
-
-
-
-
-
-
-
-
 }

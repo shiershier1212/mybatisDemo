@@ -5,10 +5,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>cn.edu.gxu</groupId>
-  <artifactId>06-result-resultmap</artifactId>
+  <artifactId>07-result-resultmap</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>06-result-resultmap</name>
+  <name>07-result-resultmap</name>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

@@ -10,6 +10,8 @@
         <option value="$PROJECT_DIR$/05-parameter/pom.xml" />
         <option value="$PROJECT_DIR$/06-result-resulttype/pom.xml" />
         <option value="$PROJECT_DIR$/06-result-resultmap/pom.xml" />
+        <option value="$PROJECT_DIR$/07-result-resultmap/pom.xml" />
+        <option value="$PROJECT_DIR$/08-dynamic-sql/pom.xml" />
       </list>
     </option>
   </component>
