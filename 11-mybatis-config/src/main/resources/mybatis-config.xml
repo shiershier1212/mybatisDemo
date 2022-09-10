@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+<!--    使用外部属性文件-->
+    <properties resource="db.properties"/>
+
+    <settings>
+        <!-- 打印sql日志 -->
+        <setting name="logImpl" value="STDOUT_LOGGING" />
+    </settings>
+
+    <environments default="development">
+        <environment id="development">
+<!--            表示使用JDBC默认的事务管理-->
+            <transactionManager type="JDBC"/>
+<!--                配置数据源-->
+            <dataSource type="POOLED">
+<!--                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>-->
+<!--                <property name="url" value="jdbc:mysql://localhost:3306/ssm_gxu?characterEncoding=utf-8"/>-->
+<!--                <property name="username" value="root"/>-->
+<!--                <property name="password" value="123456"/>-->
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <mappers>
+<!--        跟映射文件对应起来-->
+<!--        <mapper resource="cn/edu/gxu/dao/StudentDao.xml"/>-->
+<!--        <mapper resource="cn/edu/gxu/dao/TeacherDao.xml"/>-->
+        <package name="cn.edu.gxu.dao"/>
+    </mappers>
+
+
+
+</configuration>

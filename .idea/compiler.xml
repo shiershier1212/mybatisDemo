@@ -10,6 +10,7 @@
         <module name="03-dao-2" />
         <module name="07-result-resultmap" />
         <module name="08-dynamic-sql" />
+        <module name="11-mybatis-config" />
         <module name="02-dao" />
         <module name="01-first-mybatis" />
         <module name="04-dao-proxy" />
@@ -32,6 +33,7 @@
       <module name="08-dynamic-sql" target="1.7" />
       <module name="09-mybatis-relation-many-for-one" target="1.7" />
       <module name="10-mybatis-relation-onefor-many" target="1.7" />
+      <module name="11-mybatis-config" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>
